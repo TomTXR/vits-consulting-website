@@ -1,0 +1,34 @@
+# Vits Consulting
+
+> Technology consulting for non-technical founders. From idea to working product.
+
+## About
+
+Thomas Vits is a technologist with 20+ years of experience across telecom, edge computing, and AI. He helps non-technical founders validate concepts and build first versions — strategy, architecture, and hands-on execution.
+
+Based in the Dusseldorf/Cologne region, Germany. Working with clients across Europe.
+
+## Services
+
+- **Feasibility & Strategy**: Assess technical viability, build requirements, go-to-market planning for emerging tech (AI, edge, spatial computing)
+- **Build**: Architecture design and hands-on development of prototypes, MVPs, or production v1
+- **Technical Sparring**: Architecture reviews, technology choices, build-or-buy decisions for technical founders
+- **Due Diligence**: Technical assessment for investors or corporate ventures
+
+## Experience
+
+Clients include Infercom, Deutsche Telekom, MobiledgeX, Proxy42, Open Sesame Media, and Move2Edge.
+
+Co-founded TangibleXR (spatial computing) and EdgeXR (edge cloud platform).
+
+## Contact
+
+- Email: thomas@vits-consulting.de
+- LinkedIn: https://linkedin.com/in/thomasvits
+- Book a call: https://calendar.app.google/7CLtA1HiNZ5Zhie46
+
+## Links
+
+- Homepage: https://vits-consulting.de/
+- Impressum: https://vits-consulting.de/impressum/
+- Privacy Policy: https://vits-consulting.de/privacy/
