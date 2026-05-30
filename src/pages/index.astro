@@ -1,0 +1,368 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Vits Consulting — From idea to working product"
+  description="Thomas Vits helps non-technical founders validate concepts and build first versions. Strategy, architecture, and hands-on execution — from feasibility to market."
+>
+  <header class="site" id="siteHeader">
+    <div class="wrap nav">
+      <a href="#top" class="brand">Vits Consulting</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Introduction">
+      <div class="wrap">
+        <h1>From idea to working product.</h1>
+        <p class="sub">I help non-technical founders validate concepts and build first versions. Strategy, architecture, and hands-on execution — from feasibility to market.</p>
+        <a href="#contact" class="btn">Get in touch <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <section id="about" class="about">
+      <div class="wrap">
+        <p class="eyebrow" data-num="01">About</p>
+        <p>I'm Thomas Vits, a technologist with 20+ years of experience across telecom, edge computing, and AI.</p>
+        <p>My background spans software engineering, R&D leadership, and product management — from building mobile device software at LG to leading edge computing projects at MobiledgeX to advising AI infrastructure companies today.</p>
+        <p>I work best with founders who have conviction in an idea but need a technical partner to figure out if it's buildable — and then build it. I'm not an agency. I'm not a management consultant. I'm the execution half of an early-stage team, on a consulting basis.</p>
+        <p class="place">Based in the Cologne/Bonn region, Germany. Working with clients across Europe.</p>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <section id="services">
+      <div class="wrap">
+        <p class="eyebrow" data-num="02">What I do</p>
+        <div class="services-list">
+          <article class="service">
+            <h3><span class="idx">S1</span> Feasibility & Strategy</h3>
+            <p>You have an idea in emerging tech — AI, edge, spatial computing. I assess whether it's technically viable, what it takes to build, and how to get to market. No slide decks that sit on shelves. Actionable answers.</p>
+          </article>
+          <article class="service">
+            <h3><span class="idx">S2</span> Build</h3>
+            <p>I design the architecture and build the first version. Hands-on. Whether that's a working prototype, an MVP, or a production-ready v1. I stay until it works.</p>
+          </article>
+          <article class="service">
+            <h3><span class="idx">S3</span> Technical Sparring</h3>
+            <p>For technical founders who want a senior second opinion. Architecture reviews, technology choices, build-or-buy decisions. Hourly or short engagements.</p>
+          </article>
+          <article class="service">
+            <h3><span class="idx">S4</span> Due Diligence</h3>
+            <p>Technical assessment for investors or corporate ventures evaluating deals. I've been on both sides of the table.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <section id="clients">
+      <div class="wrap">
+        <p class="eyebrow" data-num="03">Clients & Experience</p>
+        <div class="clients-grid">
+          <span>Deutsche Telekom</span>
+          <span>MobiledgeX</span>
+          <span>Infercom</span>
+          <span>Proxy42</span>
+          <span>Open Sesame Media</span>
+          <span>Move2Edge</span>
+        </div>
+        <p class="ventures">Co-founded <strong>TangibleXR</strong> (spatial computing) and <strong>EdgeXR</strong> (edge cloud platform).</p>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <section id="engagement" class="engagement">
+      <div class="wrap">
+        <p class="eyebrow" data-num="04">Working together</p>
+        <p>Most engagements are monthly retainers — embedded as your technical co-founder for the duration of a project. For smaller needs, I also work hourly.</p>
+        <p>Equity arrangements possible for the right project.</p>
+        <p class="cta-line"><a href="#contact">Let's talk about your idea.</a></p>
+      </div>
+    </section>
+
+    <hr class="rule" />
+
+    <section id="contact">
+      <div class="wrap">
+        <p class="eyebrow" data-num="05">Contact</p>
+        <div class="contact-rows">
+          <div class="contact-row">
+            <span class="label">Email</span>
+            <a href="mailto:thomas@vits-consulting.de">thomas@vits-consulting.de</a>
+          </div>
+          <div class="contact-row">
+            <span class="label">LinkedIn</span>
+            <a href="https://linkedin.com/in/thomasvits" target="_blank" rel="noopener">linkedin.com/in/thomasvits</a>
+          </div>
+          <div class="contact-row">
+            <span class="label">Discuss your idea</span>
+            <a href="https://calendar.app.google/7CLtA1HiNZ5Zhie46" target="_blank" rel="noopener">Book a 30-min call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap foot-grid">
+      <address class="foot-addr">
+        <span class="co">Vits Consulting UG (haftungsbeschränkt)</span><br />
+        Meisenstrasse 6, 40789 Monheim am Rhein, Germany
+      </address>
+      <nav class="foot-links">
+        <a href="/impressum">Impressum</a>
+        <a href="/privacy">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    const onScroll = () => header?.classList.toggle('scrolled', window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  </script>
+</BaseLayout>
+
+<style>
+  header.site {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: oklch(0.991 0.004 95 / 0.82);
+    backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  header.site.scrolled { border-bottom-color: var(--line); }
+
+  .nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1.15rem;
+  }
+  .brand {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.6rem;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+  }
+  .nav-links a { color: var(--muted); }
+  .nav-links a:hover { color: var(--ink); }
+  @media (max-width: 560px) {
+    .nav-links { display: none; }
+  }
+
+  section { padding-block: clamp(3.5rem, 9vw, 6rem); }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 0 0 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .eyebrow::before {
+    content: attr(data-num);
+    color: var(--accent);
+  }
+
+  h2 {
+    font-size: clamp(1.4rem, 3.4vw, 1.7rem);
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    margin: 0 0 1.6rem;
+  }
+
+  p { margin: 0 0 1.2rem; }
+  p:last-child { margin-bottom: 0; }
+  .lead { color: var(--ink); }
+  .muted { color: var(--muted); }
+
+  .hero { padding-block: clamp(5rem, 16vw, 9rem) clamp(4rem, 10vw, 6.5rem); }
+  .hero h1 {
+    font-size: clamp(2.4rem, 7vw, 3.75rem);
+    line-height: 1.04;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    margin: 0 0 1.6rem;
+    text-wrap: balance;
+  }
+  .hero .sub {
+    font-size: clamp(1.05rem, 2.4vw, 1.2rem);
+    color: var(--muted);
+    max-width: 33em;
+    margin: 0 0 2.4rem;
+    text-wrap: pretty;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.01em;
+    color: var(--bg);
+    background: var(--ink);
+    padding: 0.78rem 1.3rem;
+    border-radius: 7px;
+    border: 1px solid var(--ink);
+    transition: background 0.18s ease, transform 0.18s ease;
+  }
+  .btn:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--bg); transform: translateY(-1px); }
+  .btn .arrow { transition: transform 0.18s ease; }
+  .btn:hover .arrow { transform: translateX(3px); }
+
+  .about p { color: var(--muted); }
+  .about p:first-of-type { color: var(--ink); }
+  .about .place {
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    color: var(--faint);
+    margin-top: 2rem;
+  }
+
+  .services-list {
+    display: grid;
+    gap: 0;
+    margin-top: 0.5rem;
+  }
+  .service {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding-block: 1.9rem;
+    border-top: 1px solid var(--line);
+  }
+  .service:last-child { border-bottom: 1px solid var(--line); }
+  .service h3 {
+    font-size: 1.12rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+  }
+  .service h3 .idx {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--accent);
+  }
+  .service p { color: var(--muted); margin: 0; font-size: 1rem; padding-left: calc(0.78rem + 0.9rem + 1.4ch); }
+  @media (max-width: 480px) {
+    .service p { padding-left: 0; }
+  }
+
+  .clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.9rem;
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  .clients-grid span {
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 0.45rem 0.85rem;
+    border-radius: 6px;
+  }
+  .ventures {
+    color: var(--muted);
+    font-size: 1rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--line);
+  }
+  .ventures strong { color: var(--ink); font-weight: 500; }
+
+  .engagement p { color: var(--muted); }
+  .engagement p:first-of-type { color: var(--ink); }
+  .engagement .cta-line {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.015em;
+    margin-top: 2.2rem;
+  }
+  .engagement .cta-line a { border-bottom: 1px solid oklch(0.515 0.072 218 / 0.35); padding-bottom: 1px; }
+  .engagement .cta-line a:hover { border-bottom-color: var(--accent-hover); }
+
+  .contact-rows { display: grid; gap: 0; }
+  .contact-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1.1rem;
+    border-top: 1px solid var(--line);
+  }
+  .contact-row:last-child { border-bottom: 1px solid var(--line); }
+  .contact-row .label {
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--faint);
+  }
+  .contact-row a { font-size: 1.05rem; }
+
+  footer.site {
+    border-top: 1px solid var(--line);
+    padding-block: 3rem 3.5rem;
+  }
+  .foot-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .foot-addr {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: var(--muted);
+    font-style: normal;
+  }
+  .foot-addr .co { color: var(--ink); }
+  .foot-links {
+    display: flex;
+    gap: 1.4rem;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+  }
+  .foot-links a { color: var(--muted); }
+  .foot-links a:hover { color: var(--ink); }
+</style>
