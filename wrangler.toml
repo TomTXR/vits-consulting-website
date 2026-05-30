@@ -1,5 +1,0 @@
-name = "vits-consulting-website"
-compatibility_date = "2024-12-01"
-
-[assets]
-directory = "./dist"
